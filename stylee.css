@@ -1,0 +1,174 @@
+*,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #9a9a9a;
+}
+
+nav {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  list-style: none;
+  padding-left: 260px;
+}
+
+nav div img {
+  width: 60px;
+  clip-path: circle();
+
+}
+
+.brand {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.4em;
+  padding: 5px;
+  text-transform: capitalize;
+}
+
+.firstname {
+  color: #f41515;
+  font-weight: 700;
+}
+
+.lastname {
+  color: rgb(25, 25, 25);
+  font-weight: 400;
+  padding-left: 6px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #191919;
+  font-weight: 600;
+  padding: 7px 0;
+  transition: all;
+  transition-duration: 300ms;
+  border-bottom: 1px solid rgba(255, 68, 0, 0);
+}
+
+nav ul li a:hover {
+  color: rgba(12, 12, 12, 0.943);
+  border-bottom: 1px solid rgb(155, 150, 150);
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin: 80px;
+  align-items: center;
+  grid-gap: 30px;
+}
+
+img{
+  object-fit: cover;
+}
+
+.grid > article{
+  box-shadow: 5px 0 5px 0px black;
+  border-radius: 20px;
+  text-align: center;
+  background: whitesmoke;
+  width: 300px;
+}
+
+.grid > article img{
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.konten{
+  text-transform: uppercase;
+  cursor: progress;
+}
+
+.grid > article:hover{
+  transform: scale(0.6);
+  transform: scale(1.1);
+}
+
+@media (max-width:1000px){
+  .grid{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media (max-width:800px){
+  .grid{
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+
+.footer{
+  padding: 40px 0;
+  background-color: #fff;
+}
+
+.footer .social{
+  text-align: center;
+  padding-bottom: 25px;
+  color: #4b4b4b;
+}
+
+.footer .social a {
+  font-size: 24px;
+  color: inherit;
+  border: 1px solid #ccc;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 8px;
+  opacity: 0.75;
+}
+
+.footer .social a:hover {
+  opacity: 0.9;
+}
+
+.footer ul{
+  margin-top: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.footer ul a{
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer ul li{
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.footer ul li a:hover{
+  opacity: 1;
+}
+
+.footer .copyright{
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+}
